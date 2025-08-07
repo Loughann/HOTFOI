@@ -11,11 +11,6 @@ import { AccessModal } from '@/components/access-modal'
 import { ScarcityModal } from '@/components/scarcity-modal'
 import type { Metadata } from 'next' // Importar o tipo Metadata
 
-// Adicionar a exportação de metadados para definir o título da página
-export const metadata: Metadata = {
-  title: 'Privacy Luana Vieira',
-  description: 'Perfil oficial de Luana Vieira na Privacy',
-}
 
 export default function ProfilePage() {
   const fullBio = "Oi, meus amores! 🔥😘 Tenho 22 aninhos e hoje vou revelar um lado meu que vai te deixar sem fôlego rs... Imagine vídeos picantes e fotos de todas posições peladinha e sem censura... Já imaginou isso né amor? vem comigo ter essa experiência rs.."
@@ -107,7 +102,7 @@ export default function ProfilePage() {
         {/* Hero Image - Mantido mais fino verticalmente */}
         <div className="relative">
           <Image
-            src="/images/profile-hero-actual.jpeg"
+            src="/images/profile-hero-actual.webp"
             alt="Profile hero image"
             width={400}
             height={192}
@@ -136,7 +131,7 @@ export default function ProfilePage() {
           {/* Profile Info - Ajustado para sobrepor */}
           <div className="flex items-start gap-3 mb-4 mt-[-60px] relative z-10">
             <Avatar className="w-28 h-28 border-2 border-white shadow-lg">
-              <AvatarImage src="/images/profile-avatar-final.jpeg" />
+              <AvatarImage src="/images/profile-avatar-final.webp" />
               <AvatarFallback className="bg-orange-100 text-orange-600 font-semibold text-4xl">AN</AvatarFallback>
             </Avatar>
             <div className="flex-1 pt-16">
@@ -268,7 +263,7 @@ export default function ProfilePage() {
               onClick={handleMediaClick}
             >
               <Image
-                src="/images/photo-section-1.jpeg"
+                src="/images/photo-section-1.webp"
                 alt="Photo 1"
                 width={300}
                 height={700}
@@ -285,7 +280,7 @@ export default function ProfilePage() {
               onClick={handleMediaClick}
             >
               <Image
-                src="/images/photo-section-2.jpeg"
+                src="/images/photo-section-2.webp"
                 alt="Photo 2"
                 width={300}
                 height={700}

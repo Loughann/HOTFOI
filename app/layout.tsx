@@ -4,8 +4,8 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Privacy Luana Vieira', // Este será sobrescrito pelo page.tsx se ele tiver metadata exportada
-  description: 'Luana Vieira - Perfil oficial',
+  title: 'v0 App', // Este será sobrescrito pelo page.tsx se ele tiver metadata exportada
+  description: 'Created with v0',
   generator: 'v0.dev',
 }
 

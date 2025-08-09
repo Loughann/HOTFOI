@@ -1,7 +1,7 @@
-'use client'
+"use client"
 
-import { useState, useEffect } from 'react'
-import { Button } from '@/components/ui/button'
+import { useState, useEffect } from "react"
+import { Button } from "@/components/ui/button"
 
 export default function FloatingMonthlyButton() {
   const [isVisible, setIsVisible] = useState(false)
@@ -9,31 +9,31 @@ export default function FloatingMonthlyButton() {
   useEffect(() => {
     const toggleVisibility = () => {
       // Mostra o botão se o usuário rolou mais de 200px para baixo
-      if (window.scrollY > 200) { 
+      if (window.scrollY > 200) {
         setIsVisible(true)
       } else {
         setIsVisible(false)
       }
     }
 
-    window.addEventListener('scroll', toggleVisibility)
+    window.addEventListener("scroll", toggleVisibility)
 
     return () => {
-      window.removeEventListener('scroll', toggleVisibility)
+      window.removeEventListener("scroll", toggleVisibility)
     }
   }, [])
 
   const handleCheckoutClick = () => {
-    window.open('https://app.kirvano.com/', '_blank');
-  };
+    window.open("https://pay.kirvano.com/75b21f3e-df7a-45d8-a985-5fe2a0e4f0e2", "_blank")
+  }
 
   return (
     <div
       className={`fixed bottom-4 left-1/2 -translate-x-1/2 w-full max-w-xs px-4 transition-all duration-300 ease-in-out z-50 ${
-        isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'
+        isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
       }`}
     >
-      <Button 
+      <Button
         onClick={handleCheckoutClick}
         className="w-full bg-orange-500 hover:bg-orange-600 active:bg-orange-700 text-white py-4 rounded-full text-base font-semibold shadow-lg active:scale-95 transition-all"
       >

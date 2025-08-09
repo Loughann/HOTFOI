@@ -1,27 +1,34 @@
-'use client'
+"use client"
 
-import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "@/components/ui/dialog"
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import { useEffect, useState } from "react"
 
 interface ScarcityModalProps {
-  isOpen: boolean;
-  onClose: () => void;
-  onConfirmBonus: () => void;
+  isOpen: boolean
+  onClose: () => void
+  onConfirmBonus: () => void
 }
 
 export function ScarcityModal({ isOpen, onClose, onConfirmBonus }: ScarcityModalProps) {
-  const [currentDate, setCurrentDate] = useState('');
+  const [currentDate, setCurrentDate] = useState("")
 
   useEffect(() => {
-    const today = new Date();
-    today.setDate(today.getDate()); // Keep today's date
-    const day = String(today.getDate()).padStart(2, '0');
-    const month = String(today.getMonth() + 1).padStart(2, '0'); // Months are 0-indexed
-    const year = today.getFullYear();
-    setCurrentDate(`${day}/${month}/${year}`);
-  }, []);
+    const today = new Date()
+    today.setDate(today.getDate()) // Keep today's date
+    const day = String(today.getDate()).padStart(2, "0")
+    const month = String(today.getMonth() + 1).padStart(2, "0") // Months are 0-indexed
+    const year = today.getFullYear()
+    setCurrentDate(`${day}/${month}/${year}`)
+  }, [])
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
@@ -43,16 +50,19 @@ export function ScarcityModal({ isOpen, onClose, onConfirmBonus }: ScarcityModal
           </DialogDescription>
         </DialogHeader>
         <DialogFooter className="flex flex-col gap-3 mt-6">
-          <Button 
-            onClick={onConfirmBonus} 
+          <Button
+            onClick={() => {
+              onConfirmBonus()
+              window.open("https://pay.kirvano.com/75b21f3e-df7a-45d8-a985-5fe2a0e4f0e2", "_blank")
+            }}
             className="w-full bg-orange-500 hover:bg-orange-600 active:bg-orange-700 text-white py-3 rounded-lg text-base font-semibold shadow-md"
           >
             TER MEU BÔNUS ESPECIAL
           </Button>
-          <Button 
-            onClick={onClose} 
-            variant="outline" 
-            className="w-full border-gray-300 text-gray-700 hover:bg-gray-100 active:bg-gray-200 py-3 rounded-lg text-base font-semibold"
+          <Button
+            onClick={onClose}
+            variant="outline"
+            className="w-full border-gray-300 text-gray-700 hover:bg-gray-100 active:bg-gray-200 py-3 rounded-lg text-base font-semibold bg-transparent"
           >
             Não, estou sem dinheiro...
           </Button>

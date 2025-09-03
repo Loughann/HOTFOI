@@ -236,7 +236,7 @@ export default function ProfilePageClient() {
               onClick={handleMediaClick}
             >
               <iframe
-                src="https://player.vimeo.com/video/1107672212?autoplay=1&muted=1&controls=0&title=0&byline=0&portrait=0&autopause=0"
+                src="https://vimeo.com/1115646473?autoplay=1&muted=1&controls=0&title=0&byline=0&portrait=0&autopause=0"
                 width="100%"
                 height="100%"
                 frameBorder="0"

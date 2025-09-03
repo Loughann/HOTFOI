@@ -192,8 +192,8 @@ export default function ProfilePageClient() {
               <div className="text-center">
                 <div className="text-lg font-bold">Mensal</div>
                 <div className="text-sm opacity-90">
-                  <span className="line-through">De R$ 47,00</span> por{" "}
-                  <span className="text-base font-bold">R$ 10,00</span>
+                  <span className="line-through">De R$ 49,90</span> por{" "}
+                  <span className="text-base font-bold">R$ 9,90</span>
                 </div>
               </div>
             </Button>
@@ -205,8 +205,8 @@ export default function ProfilePageClient() {
               <div className="text-center">
                 <div className="text-lg font-bold">Vitalício</div>
                 <div className="text-sm opacity-90">
-                  <span className="line-through">De R$ 197,00</span> por{" "}
-                  <span className="text-base font-bold">R$ 37,00</span>
+                  <span className="line-through">De R$ 137,00</span> por{" "}
+                  <span className="text-base font-bold">R$ 27,90</span>
                 </div>
               </div>
             </Button>

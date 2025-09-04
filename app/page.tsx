@@ -1,11 +1,11 @@
 import type { Metadata } from "next"
-import AgeGateWrapper from "./age-gate-wrapper" // Importar o novo wrapper
+import ProfilePageClient from "@/components/profile-page-client"
 
 export const metadata: Metadata = {
   title: "Privacy Luana Vieira",
   description: "Perfil oficial de Luana Vieira na Privacy",
 }
 
-export default function HomePage() {
-  return <AgeGateWrapper />
+export default function ProfilePage() {
+  return <ProfilePageClient />
 }

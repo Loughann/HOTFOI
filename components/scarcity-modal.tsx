@@ -28,7 +28,7 @@ export function ScarcityModal({ isOpen, onClose, onConfirmBonus }: ScarcityModal
       <DialogContent className="sm:max-w-[425px] p-6 rounded-lg shadow-lg bg-white">
         <DialogHeader className="text-center">
           <div className="bg-red-500 text-white text-sm font-bold py-2 px-4 rounded-t-lg -mx-6 -mt-6 mb-4">
-            ACESSO POR R$10,00 VÁLIDO SOMENTE ATÉ {currentDate}
+            ACESSO POR R$9,90 VÁLIDO SOMENTE ATÉ {currentDate}
           </div>
           <Image
             src="/images/scarcity-modal-image.jpeg" // Usando a nova imagem

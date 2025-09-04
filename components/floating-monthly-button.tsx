@@ -37,7 +37,7 @@ export default function FloatingMonthlyButton() {
         onClick={handleCheckoutClick}
         className="w-full bg-orange-500 hover:bg-orange-600 active:bg-orange-700 text-white py-4 rounded-full text-base font-semibold shadow-lg active:scale-95 transition-all"
       >
-        ASSINAR MENSAL R$10,00
+        ASSINAR MENSAL R$9,90
       </Button>
     </div>
   )

@@ -11,7 +11,7 @@ import { ScarcityModal } from "@/components/scarcity-modal"
 
 export default function ProfilePageClient() {
   const fullBio =
-    "Oi, meus amores! 🔥😘 Tenho 22 aninhos e hoje vou revelar um lado meu que vai te deixar sem fôlego rs... Imagine vídeos picantes e fotos de todas posições peladinha e sem censura... Já imaginou isso né amor? vem comigo ter essa experiência rs.."
+    "Tenho 22 aninhos e uma tesão que não acaba nunca 😈🔥 Aqui você vai me ver metendo a mão, abrindo a bucetinha bem molhada, sentando e gemendo sem vergonha nenhuma 💦 Quer me comer em todas as posições e gozar comigo? Então vem agora, amor… tô peladinha te esperando 😏🍑"
   const [showFullBio, setShowFullBio] = useState(false)
   const bioMaxLength = 120
 

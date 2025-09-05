@@ -44,7 +44,7 @@ export default function ProfilePageClient() {
   }
 
   const handleAccessModalConfirm = () => {
-    window.open("https://app.kirvano.com/", "_blank")
+    window.open("https://pay.kirvano.com/75b21f3e-df7a-45d8-a985-5fe2a0e4f0e2", "_blank")
     setIsAccessModalOpen(false)
   }
 
@@ -58,7 +58,7 @@ export default function ProfilePageClient() {
   }
 
   const handleScarcityModalConfirmBonus = () => {
-    window.open("https://app.kirvano.com/", "_blank")
+    window.open("https://pay.kirvano.com/75b21f3e-df7a-45d8-a985-5fe2a0e4f0e2", "_blank")
     setIsScarcityModalOpen(false)
   }
 
@@ -67,7 +67,7 @@ export default function ProfilePageClient() {
   }
 
   const handlePricingButtonClick = () => {
-    window.open("https://app.kirvano.com/", "_blank")
+    window.open("https://pay.kirvano.com/75b21f3e-df7a-45d8-a985-5fe2a0e4f0e2", "_blank")
   }
 
   return (

@@ -24,7 +24,7 @@ export default function FloatingMonthlyButton() {
   }, [])
 
   const handleCheckoutClick = () => {
-    window.open('https://app.kirvano.com/', '_blank');
+    window.open('https://pay.kirvano.com/75b21f3e-df7a-45d8-a985-5fe2a0e4f0e2', '_blank');
   };
 
   return (
